@@ -1,11 +1,7 @@
-//main.js
+function myFunction() {
 
+var sentence = "I am learning"; //creating the variable
+sentence += " a lot from this course!"; //using the += operator to add to the variable
+document.getElementById("Concatenate").innerHTML = sentence; //using document.getElementById()
 
-//function for button event
-function updateParagraph() {
-    // Step 4: Use document.getElementById to get the paragraph element by id
-    var paragraph = document.getElementById("message");
-
-    // Step 5: Update the content of the paragraph
-    paragraph.innerHTML = "The message has been updated!";
 }
