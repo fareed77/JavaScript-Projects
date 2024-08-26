@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lightbox - One Page Website</title>
+        <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="JS/one_page_website.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="CSS/one_page_website.css"/> 
+    </head>
+<body>
+    <h2 style="text-align:left">Lightbox</h2>
+
+    <div class="row">
+      <div class="column">
+        <img src="Images/Animal1-small.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Images/Animal2-small.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Images/Animal3-small.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Images/Animal4-small.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="Images/Animal5-small.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="Images/Animal1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="Images/Animal2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="Images/Animal3.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="Images/Animal4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="Images/Animal5.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="Images/Animal1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Squirrel">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Images/Animal2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Elephant">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Images/Animal3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Puppies">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="Images/Animal4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Crowned Crane">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="Images/Animal5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Fox">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
